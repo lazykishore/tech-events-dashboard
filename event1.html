@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security & AI Events Dashboard</title>
+    <link rel="icon" href="https://cdn.vectorstock.com/i/1000v/97/88/calendar-application-dark-mode-glyph-ui-icon-vector-44429788.jpg">
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --accent-color: #58a6ff;
+            --text-color: #c9d1d9;
+            --text-bright: #f0f6fc;
+            --border-color: #30363d;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 2.5rem 1rem;
+            border-bottom: 1px solid var(--border-color);
+            background: linear-gradient(180deg, #161b22 0%, #0d1117 100%);
+        }
+
+        h1 {
+            color: var(--text-bright);
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .subtitle {
+            color: #8b949e;
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .event-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        .event-card img {
+            max-width: 100%;
+            max-height: 380px;
+            width: auto;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .event-title {
+            color: var(--text-bright);
+            font-size: 1.6rem;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        .event-meta {
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: #238636;
+            background-color: rgba(35, 134, 54, 0.15);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+
+        .event-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 1px dashed var(--accent-color);
+        }
+
+        .event-link:hover {
+            color: #79c0ff;
+            border-bottom-style: solid;
+        }
+
+        footer {
+            border-top: 1px solid var(--border-color);
+            padding: 2rem 1rem;
+            text-align: center;
+            background-color: var(--card-bg);
+            margin-top: 4rem;
+        }
+
+        .contact-info h3 {
+            color: var(--text-bright);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info p {
+            margin: 0.2rem 0;
+            color: #8b949e;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Upcoming Tech Events 
+            <img src="https://cdn.vectorstock.com/i/1000v/97/88/calendar-application-dark-mode-glyph-ui-icon-vector-44429788.jpg" width="40" height="40" alt="Calendar icon" style="vertical-align: middle; border-radius: 6px;">
+        </h1>
+        <p class="subtitle">Don't miss a beat. Here are the premium tech and networking industry events you have registered for!</p>
+    </header>
+
+    <main>
+        <!-- Event 1 -->
+        <div class="event-card">
+            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/tech-event-poster-motion-design-template-8336d288fcc0d6ff912c8b88b4b5c420_screen.jpg?ts=1567082380" alt="Networking Night Banner">
+            <h2 class="event-title">PHOTO GALLERY & NETWORKING NIGHT</h2>
+            <div class="event-meta">FREE FOOD | FREE ENTRY | NO PETS ALLOWED</div>
+            <p>Join local builders, developers, and engineers for an open floor exhibition. This session focuses on visualizing complex threat graphs, UI dashboards, and system architecture displays from open-source intelligence frameworks.</p>
+        </div>
+
+        <!-- Event 2 -->
+        <div class="event-card">
+            <img src="https://static.vecteezy.com/system/resources/previews/072/106/242/large_2x/a-hand-shows-a-virtual-interface-featuring-a-chat-ai-system-and-a-data-analytics-dashboard-the-dark-futuristic-display-highlights-modern-technology-and-artificial-intelligence-photo.jpg" alt="AI Presentation Panel">
+            <h2 class="event-title">
+                <a class="event-link" href="https://www.myntra.com/" target="_blank">E-Commerce & AI Integration Summit</a>
+            </h2>
+            <div class="event-meta">FREE FOOD | FREE ENTRY | NO PETS ALLOWED</div>
+            <p>Artificial intelligence (AI) is transforming modern digital spaces. This meetup examines system models capable of performing automated context discovery, predictive pattern mapping, and speech classification natively inside client applications.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <h3>Contact Organizer Desk</h3>
+            <p><strong>Hotline:</strong> 7551041316</p>
+            <p><strong>Email:</strong> <a href="mailto:eventsadd@gmail.com" style="color: var(--accent-color); text-decoration: none;">eventsadd@gmail.com</a></p>
+            <p>9th Street, Vandalur</p>
+        </div>
+    </footer>
+
+</body>
+</html>
